@@ -1,0 +1,71 @@
+[
+    {
+       "_id": {
+      "$oid": "65622f244ad4ea756d4c90a6"
+    },
+      "psw": "1",
+      "cardNumber": "123",
+      "login": "yo1",
+      "email": "yo1@gmaol.com",
+      "__v": 0,
+      "userId": "1",
+      "isUser": true
+    },
+    {
+          "_id": {
+      "$oid": "65622f244ad4ea756d4c90a7"
+    },
+      "psw": "1",
+      "cardNumber": "123",
+      "login": "yo2",
+      "email": "yo2@gmaol.com",
+      "userId": "2",
+      "isUser": true
+    },
+    {
+           "_id": {
+      "$oid": "65622f244ad4ea756d4c90a8"
+    },
+      "psw": "1",
+      "cardNumber": "123",
+      "login": "yo3",
+      "email": "yo1@gmaol.com",
+      "__v": 0,
+      "userId": "3",
+      "isUser": true
+    },
+    {
+           "_id": {
+      "$oid": "65622f244ad4ea756d4c90a9"
+    },
+      "psw": "1",
+      "cardNumber": "123",
+      "login": "yo4",
+      "email": "yo2@gmaol.com",
+      "userId": "4",
+      "isUser": true
+    },
+    {
+           "_id": {
+      "$oid": "65622f244ad4ea756d4c90a10"
+    },
+      "psw": "1",
+      "cardNumber": "123",
+      "login": "yo5",
+      "email": "yo1@gmaol.com",
+      "__v": 0,
+      "userId": "5",
+      "isUser": true
+    },
+    {
+           "_id": {
+      "$oid": "65622f244ad4ea756d4c90a11"
+    },
+      "psw": "1",
+      "cardNumber": "123",
+      "login": "yo6",
+      "email": "yo2@gmaol.com",
+      "userId": "6",
+      "isUser": true
+    }
+  ]
