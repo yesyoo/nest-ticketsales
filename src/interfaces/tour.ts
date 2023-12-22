@@ -6,12 +6,16 @@ export interface ITour {
     img: string,
     id: string,
     type: string,
-    date: string
+    date: string,
+    country: string,
+    city: string
 }
 export interface ITourClient {
     name: string,
     description: string,
     tourOperator: string,
     price: string,
-    img: string
+    img: string,
+    country: string,
+    city: string
 }

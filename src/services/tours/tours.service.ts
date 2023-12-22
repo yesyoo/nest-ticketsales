@@ -16,11 +16,16 @@ export class ToursService {
     generateTours(): void {
         console.log('generate i tours')
         for (let i = 0; i <= this.toursCount; i++) {
-            const tour = new TourDto('test' + i, 'test desc', 'test operator', 'test price', '')
+            const tour = new TourDto('test' + i, 'test country', 'test city','test desc', 'test operator', 'test price', '')
             const tourData = new this.tourModel(tour)
             tourData.save()
         }
     };
+
+    async getToursByCountry(data: string): Promise<Tour[]> {
+        console.log('456')
+        return this.tourModel.find({"country": data})
+    }
 
     async deleteTours(): Promise<any> {
         return this.tourModel.deleteMany()
@@ -30,8 +35,8 @@ export class ToursService {
         return this.tourModel.findByIdAndDelete(id)
     };
 
-    async getTourById(id): Promise<Tour> {
-        return this.tourModel.findById(id)
+    async getTourById(data: string): Promise<Tour> {
+        return this.tourModel.findOne({"_id": data})
     };
 
     async getAllTours(): Promise<Tour[]> {
@@ -39,7 +44,7 @@ export class ToursService {
     };
 
     async uploadTour(body: ITourClient) {
-        const tour = new TourDto(body.name, body.description, body.tourOperator, body.price, body.img)
+        const tour = new TourDto(body.name, body.country, body.city, body.description, body.tourOperator, body.price, body.img)
         const tourData = new this.tourModel(tour)
         await tourData.save()
     };

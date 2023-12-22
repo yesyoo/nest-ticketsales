@@ -35,5 +35,5 @@ export class TourItemController {
     @Get(':name')
     getTourByName(@Param('name') name: string): any {
         return this.toursService.getTourByName(name)
-    }ж
+    };
 }

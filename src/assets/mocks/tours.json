@@ -1,0 +1,144 @@
+[{
+    "_id": {
+      "$oid": "657d7047b29fe4b5a2904411"
+    },
+    "name": "Melbourne Tour ",
+    "description": "...",
+    "price": "1000",
+    "img": "img-1702719559275-857087525.jpeg",
+    "country": "Australia",
+    "city": "Melbourne",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d7074b29fe4b5a2904414"
+    },
+    "name": "Sydney Tour ",
+    "description": "...",
+    "price": "1100",
+    "img": "img-1702719604217-505057084.jpeg",
+    "country": "Australia",
+    "city": "Sydney",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d70a0b29fe4b5a2904417"
+    },
+    "name": "Manaus Tour ",
+    "description": "...",
+    "price": "1200",
+    "img": "img-1702719648061-605181307.jpeg",
+    "country": "Brazil",
+    "city": "Manaus",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d70b8b29fe4b5a2904419"
+    },
+    "name": "Recife Tour ",
+    "description": "...",
+    "price": "1300",
+    "img": "img-1702719672178-475298093.jpeg",
+    "country": "Brazil",
+    "city": "Recife",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d70dab29fe4b5a290441b"
+    },
+    "name": "Milano Tour ",
+    "description": "...",
+    "price": "1400",
+    "img": "img-1702719706674-541205694.jpeg",
+    "country": "Italy",
+    "city": "Milano",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d70f5b29fe4b5a290441d"
+    },
+    "name": "Sicilia Tour ",
+    "description": "...",
+    "price": "1100",
+    "img": "img-1702719733526-445723236.jpeg",
+    "country": "Italy",
+    "city": "Sicilia",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d7110b29fe4b5a290441f"
+    },
+    "name": "Madurai Tour ",
+    "description": "...",
+    "price": "1100",
+    "img": "img-1702719760781-60159083.jpeg",
+    "country": "India",
+    "city": "Madurai",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d712ab29fe4b5a2904421"
+    },
+    "name": "Delhi Tour ",
+    "description": "...",
+    "price": "1200",
+    "img": "img-1702719786956-380660309.jpeg",
+    "country": "India",
+    "city": "Delhi",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d7149b29fe4b5a2904423"
+    },
+    "name": "Murmansk Tour ",
+    "description": "...",
+    "price": "1000",
+    "img": "img-1702719817817-995578476.jpeg",
+    "country": "Russia",
+    "city": "Murmansk",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d715eb29fe4b5a2904425"
+    },
+    "name": "Derbent Tour ",
+    "description": "...",
+    "price": "1000",
+    "img": "img-1702719838889-611158492.jpeg",
+    "country": "Russia",
+    "city": "Derbent",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d7176b29fe4b5a2904427"
+    },
+    "name": "Magadan Tour ",
+    "description": "...",
+    "price": "1100",
+    "img": "img-1702719862522-409163361.jpeg",
+    "country": "Russia",
+    "city": "Magadan",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "657d718db29fe4b5a2904429"
+    },
+    "name": "Surgut Tour ",
+    "description": "...",
+    "price": "1200",
+    "img": "img-1702719885537-912408127.jpeg",
+    "country": "Russia",
+    "city": "Surgut",
+    "__v": 0
+  }]

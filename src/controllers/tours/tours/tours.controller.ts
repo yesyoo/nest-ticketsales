@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Delete, Post, Body } from '@nestjs/common';
+import { Controller, Get, Param, Delete, Post, Body, Query } from '@nestjs/common';
 import { ToursService } from '../../../services/tours/tours.service';
 import { Tour } from 'src/shemas/tours';
 import { UseGuards } from '@nestjs/common';
@@ -17,16 +17,23 @@ export class ToursController {
         return this.toursService.getAllTours();
     };
 
-    @Get(':name')
-    getTourByName(@Param('name') name: string): Promise<Tour[]> {
+    @Get('tourname')
+    getTourByName(@Query() params: any): Promise<Tour[]> {
         console.log('get tour by name')
-        return this.toursService.getTourByName(name);
+        return this.toursService.getTourByName(params.tourname);
     };
 
-    @Get(':id')
-    getTourById(@Param('id') id): Promise<Tour> {
-        return this.toursService.getTourById(id);
+    @Get('id')
+    getTourById(@Query() params: any): Promise<Tour> {
+        console.log('params.id', params.id)
+        return this.toursService.getTourById(params.id);
     };
+    
+    @Get('country')
+    getToursByCountry(@Query() params: any): Promise<Tour[]> {
+        console.log('params.country', params.country)
+        return this.toursService.getToursByCountry(params.country)
+    }
 
     @Post()
     initTours(): Promise<Tour[]> {

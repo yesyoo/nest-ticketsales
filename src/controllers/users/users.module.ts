@@ -8,6 +8,7 @@ import { PassportModule } from '@nestjs/passport/dist';
 import { jwtConstants } from '../../static/private/constants';
 import { JwtModule } from '@nestjs/jwt'
 import { JwtStrategyService } from '../../services/Authentication/jwt-strategy/jwt-strategy.service';
+import { BcryptService } from '../../services/Authentication/bcrypt/bcrypt.service';
 
 
 @Module({
@@ -24,7 +25,8 @@ import { JwtStrategyService } from '../../services/Authentication/jwt-strategy/j
   providers: [
     UsersService, 
     AuthService,
-    JwtStrategyService
+    JwtStrategyService,
+    BcryptService
   ],
   exports: []
 })

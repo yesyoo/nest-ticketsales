@@ -24,5 +24,9 @@ export class Tour implements ITour {
 
     @Prop() date: string
 
+    @Prop() country: string
+
+    @Prop() city: string
+
 }
 export const TourSchema = SchemaFactory.createForClass(Tour);
