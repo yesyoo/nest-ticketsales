@@ -1,3 +1,4 @@
+
 export interface IOrder {
     age: string,
     birthDay: string,
@@ -7,5 +8,6 @@ export interface IOrder {
     _id?: string,
     firstName: string,
     lastName: string,
-    citizen: string
+    citizen: string,
+    tourInfo?: any
 }

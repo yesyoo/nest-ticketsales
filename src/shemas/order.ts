@@ -24,5 +24,6 @@ export class Order implements IOrder {
 
     @Prop() citizen: string
 
+
 }
 export const OrderSchema = SchemaFactory.createForClass(Order);

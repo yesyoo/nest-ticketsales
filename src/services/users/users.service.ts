@@ -7,6 +7,7 @@ import { UserDto } from 'src/dto/user-dto';
 import { IUser } from 'src/interfaces/user';
 import { BcryptService } from '../Authentication/bcrypt/bcrypt.service';
 
+
 @Injectable()
 export class UsersService {
     constructor(@InjectModel(User.name) private userModel: Model<UserDocument>,
@@ -80,12 +81,14 @@ export class UsersService {
     async auth(data: UserDto): Promise<Object> {
         let user: UserDto = data;
         let access_token: Object;
+        
         const res = await this.getHash(data.login).then(hash => user.psw = hash)
             .then(res => this.login(user).then(data => {access_token = data}))
         if(access_token) {
             return access_token
         };
     };
+
 }
  
    

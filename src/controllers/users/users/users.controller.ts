@@ -1,9 +1,10 @@
-import {Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Put, UseGuards} from '@nestjs/common';
+import {Body, Controller, Delete, Get, HttpException, HttpStatus, Param, Patch, Post, Put, Res, UseGuards} from '@nestjs/common';
 import { UsersService } from 'src/services/users/users.service';
 import { User } from 'src/shemas/user';
 import { UserDto } from 'src/dto/user-dto';
 import { AuthGuard } from '@nestjs/passport';
 import { JwtGuardService } from '../../../services/Authentication/jwt-guard/jwt-guard.service';
+
 
 
 
@@ -18,15 +19,16 @@ export class UsersController {
 
     @Get(':id')
     getUserById(@Param('id') id): Promise<User> {
+        console.log('54')
         return this.userService.getUserById(id);
     };
  
-
-    @UseGuards(JwtGuardService)
+    // @UseGuards(JwtGuardService)
     @Post()
     sendUser(@Body() dataDTO: UserDto): Promise<User> { 
         return this.userService.checkRegUser(dataDTO.login).then((queryRes) => {
             if (queryRes.length === 0) {
+                
                 return this.userService.sendUser(dataDTO);
             } else {
                 throw new HttpException( {

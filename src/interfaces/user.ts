@@ -4,5 +4,6 @@ export interface IUser {
     login: string,
     email: string,
     _id?: string,
-    role?: string
+    role?: string,
+    orders?: string[]
 }

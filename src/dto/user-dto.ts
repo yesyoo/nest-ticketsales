@@ -6,5 +6,6 @@ export class UserDto implements IUser {
     login: string;
     email: string;
     id: string;
-    role: string
+    role: string;
+    orders: string[];
  }

@@ -4,7 +4,6 @@ import { Injectable } from '@nestjs/common';
 import { jwtConstants } from 'src/static/private/constants';
 
 @Injectable()
-
 // проверка токена при каждом запросе с клиента
 export class JwtStrategyService extends PassportStrategy(Strategy) {
   constructor() {
