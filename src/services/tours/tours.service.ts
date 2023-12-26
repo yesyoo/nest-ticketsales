@@ -5,6 +5,7 @@ import { TourDocument, Tour } from 'src/shemas/tours';
 import { Model } from 'mongoose';
 import { ITourClient } from '../../interfaces/tour';
 import { ITour } from '../../interfaces/tour';
+import { isNullOrUndefined } from 'util';
 
 
 @Injectable()
@@ -49,7 +50,10 @@ export class ToursService {
         await tourData.save()
     };
 
-    async getTourByName(name: string): Promise<ITour[]> {
-        return this.tourModel.find({name: { "$regex": name, "$options": "i" }})
+    async getTourByName(name: string): Promise<Tour[]>{
+  
+            return this.tourModel.find({name: { "$regex": name, "$options": "i" }})
+
+        
     };
  }

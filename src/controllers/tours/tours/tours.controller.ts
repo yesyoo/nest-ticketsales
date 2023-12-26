@@ -18,9 +18,11 @@ export class ToursController {
     };
 
     @Get('tourname')
-    getTourByName(@Query() params: any): Promise<Tour[]> {
+    getTourByName(@Query() params: any): Promise<Tour[]>{
         console.log('get tour by name')
-        return this.toursService.getTourByName(params.tourname);
+   
+            return this.toursService.getTourByName(params.tourname); 
+        
     };
 
     @Get('id')

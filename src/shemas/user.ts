@@ -19,7 +19,5 @@ export class User implements IUser {
  
     @Prop() role: string 
 
-    @Prop() orders: string[] 
-
  }   
  export const UserSchema = SchemaFactory.createForClass(User);

@@ -7,5 +7,4 @@ export class UserDto implements IUser {
     email: string;
     id: string;
     role: string;
-    orders: string[];
  }

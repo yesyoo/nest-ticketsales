@@ -3,7 +3,6 @@ import { HydratedDocument } from 'mongoose';
 import { ITour } from 'src/interfaces/tour';
 import { SchemaFactory } from '@nestjs/mongoose';
 
-
 export type TourDocument = HydratedDocument<Tour>
 
 @Schema()
