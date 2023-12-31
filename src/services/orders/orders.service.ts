@@ -46,23 +46,21 @@ export class OrdersService {
         async function getData(): Promise<any> {
             return new Promise(async res => {
                 await infoUserModel.findOne({userId: userId}).then(user => userData.user = user);
-                await orderModel.find({userId: userId}).then(orders => {
-                    let i = 0;
-                    (async function foo(i): Promise<any> {
-                        await tourModel.findOne({_id: orders[i].tourId}).then(tour => {
-                            userData.ordersArr.push({order: orders[i], tour: tour})
-                                if(i < orders.length - 1) {
-                                    foo(i + 1)
-                                } else { 
-                                    res(userData)
-                                }
-                            })
-                        })(i)
-                    })
+                await orderModel.find({userId: userId}).then(async orders => {
+                    
+                    for await (let order of orders) {
+                        await tourModel.findOne({_id: order.tourId}).then(tour => {
+                            userData.ordersArr.push({order, tour})
+                        })
+                    }
                 })
+                res(userData)
+            })
         }
         return getData()
     };
+
+    
     
 
     async deleteAll(): Promise<any> {
